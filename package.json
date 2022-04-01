@@ -1,0 +1,11 @@
+{
+  "name": "ml-from-zero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kazchimo/ml-from-zero.git",
+  "author": "kazchimo <pharcydetip@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "pyright": "^1.1.234"
+  }
+}
