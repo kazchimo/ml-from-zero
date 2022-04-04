@@ -7,3 +7,7 @@ def step_function(arr: np.array) -> np.array:
 
 def sigmoid(x: np.array) -> np.array:
   return 1 / (1 + np.exp(-x))
+
+
+def relu(x: np.array) -> np.array:
+  return np.maximum(0, x)
