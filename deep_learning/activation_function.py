@@ -14,6 +14,7 @@ def relu(x: np.array) -> np.array:
 
 
 def softmax(x: np.array) -> np.array:
-  exp_x = np.exp(x)
+  mx = np.max(x)
+  exp_x = np.exp(x - mx)
   exp_sum = np.sum(exp_x)
   return exp_x / exp_sum
