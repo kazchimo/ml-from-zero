@@ -10,7 +10,27 @@ numpy = "^1.22.3"
 
 [tool.poetry.dev-dependencies]
 yapf = "^0.32.0"
+toml = "^0.10.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.yapf]
+based_on_style = "google"
+split_before_first_argument = true
+dedent_closing_brackets = false
+indent_width = 2
+continuation_indent_width = 2
+blank_line_before_nested_class_or_def = false
+join_multiple_lines = true
+split_before_dot = true
+split_complex_comprehension = true
+column_limit = 100
+
+[tool.yapfignore]
+ignore_patterns = [
+    ".venv/*",
+    "venv/*",
+    "typings/*"
+]
