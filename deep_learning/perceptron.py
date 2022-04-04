@@ -32,3 +32,9 @@ def OR(x1: float, x2: float) -> int:
     return 0
   else:
     return 1
+
+
+def XOR(x1: float, x2: float) -> int:
+  s1 = NAND(x1, x2)
+  s2 = OR(x1, x2)
+  return AND(s1, s2)
