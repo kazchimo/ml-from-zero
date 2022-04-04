@@ -11,3 +11,9 @@ def sigmoid(x: np.array) -> np.array:
 
 def relu(x: np.array) -> np.array:
   return np.maximum(0, x)
+
+
+def softmax(x: np.array) -> np.array:
+  exp_x = np.exp(x)
+  exp_sum = np.sum(exp_x)
+  return exp_x / exp_sum
